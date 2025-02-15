@@ -1,3 +1,4 @@
+import { Outfit } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -9,6 +10,7 @@ export default {
   ],
   theme: {
   	extend: {
+
   		colors: {
 			"color-1": "hsl(var(--color-1))",
 			"color-2": "hsl(var(--color-2))",
