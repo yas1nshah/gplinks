@@ -33,7 +33,7 @@ export default function Home() {
 
         <div className="flex flex-col gap-5 my-5 font-semibold w-full">
           <div onClick={() => window.open("https://www.whatsapp.com/catalog/923344444302/?app_absent=0")} className="rounded-xl overflow-hidden h-60 relative">
-            <Image src={'/cresta.png'} alt="cresta" width={500} height={300} />
+            <Image src={'/three.png'} alt="cresta" width={500} height={300} />
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
             <div className="absolute bottom-0 left-0 flex justify-between w-full py-3 px-2 text-white/90">
               <span className="mx-4 font-semibold">Checkout our Catalogue</span>
