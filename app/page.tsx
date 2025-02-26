@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { RainbowButton } from "@/components/ui/rainbow-button";
-import { Radio, LucideView, ArrowUpRightIcon, CompassIcon, ChevronDownIcon, ChevronUpIcon } from "lucide-react";
+import { Radio, LucideView, ArrowUpRightIcon, CompassIcon, ChevronDownIcon, ChevronUpIcon, MessageCircleMoreIcon } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -36,7 +36,7 @@ export default function Home() {
             <Image src={'/white.png'} alt="cresta" width={500} height={300} />
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
             <div className="absolute bottom-0 left-0 flex justify-between w-full py-3 px-2 text-white/90">
-              <span className="mx-4 font-semibold">Checkout our Catalogue</span>
+              <span className="mx-4 font-semibold">Visit the Ghost Inventory</span>
               <ArrowUpRightIcon className="mx-2 opacity-55" />  
             </div>
           </div>
@@ -46,18 +46,36 @@ export default function Home() {
             <span className="mx-4">Make a Ghost Query</span>  
             <ArrowUpRightIcon className="mx-2 opacity-25 " />  
           </RainbowButton>
+          
+          <RainbowButton onClick={() => window.open("http://tiny.cc/gp-works")} className="flex justify-between gap-4 px-1">
+            <Radio className="mx-2 opacity-75 py-[1px]"/>
+            <span className="mx-4">GP Works: Live Ops</span>  
+            <ArrowUpRightIcon className="mx-2 opacity-25 " />  
+          </RainbowButton>
+          
+          <RainbowButton onClick={() => window.open("https://wa.me/923344444302")} className="flex justify-between gap-4 px-1">
+            <MessageCircleMoreIcon className="mx-2 opacity-75 py-[1px]"/>
+            <span className="mx-4">GP WhatsApp</span>  
+            <ArrowUpRightIcon className="mx-2 opacity-25 " />  
+          </RainbowButton>
+          
+          <RainbowButton onClick={() => window.open("https://ghostprotocols.pk/")} className="flex justify-between gap-4 px-1">
+            <CompassIcon className="mx-2 opacity-75 py-[1px]"/>
+            <span className="mx-4">GP Website</span>  
+            <ArrowUpRightIcon className="mx-2 opacity-25 " />  
+          </RainbowButton>
 
-          <Button onClick={() => window.open("http://tiny.cc/gp-works")} size={"lg"} className="bg-white/5 z-10 drop-shadow-2xl flex justify-between gap-4 px-1"> 
+          {/* <Button onClick={() => window.open("http://tiny.cc/gp-works")} size={"lg"} className="bg-white/5 z-10 drop-shadow-2xl flex justify-between gap-4 px-1"> 
             <Radio className="mx-2 opacity-75 py-[1px]"/>
             GP Works: Live Ops
             <ArrowUpRightIcon className="mx-2 opacity-25 " />  
-          </Button>
+          </Button> */}
 
-          <Button onClick={() => window.open("https://ghostprotocols.pk/")} size={"lg"} className="bg-white/5 z-10 drop-shadow-2xl flex justify-between gap-4 px-1"> 
+          {/* <Button onClick={() => window.open("https://ghostprotocols.pk/")} size={"lg"} className="bg-white/5 z-10 drop-shadow-2xl flex justify-between gap-4 px-1"> 
             <CompassIcon className="mx-2 opacity-75 py-[1px]"/>
             GP Website
             <ArrowUpRightIcon className="mx-2 opacity-25 " />  
-          </Button>
+          </Button> */}
 
           {/* GP Socials Toggle Button */}
           <Button onClick={() => setShowSocials(!showSocials)} size={"lg"} className="bg-white/5 z-10 drop-shadow-2xl flex justify-between gap-4 px-1"> 
@@ -68,7 +86,26 @@ export default function Home() {
           
           {showSocials && (
             <div className="flex flex-col gap-3 bg-white/5 z-10 drop-shadow-2xl p-4 rounded-xl transition-opacity duration-1000 ease-in-out">
-              <Button onClick={() => window.open("https://www.facebook.com/ghostprotocolspk")} size={"lg"} className="bg-white/5 z-10 drop-shadow-2xl flex justify-between gap-4 px-1"> 
+              
+              <RainbowButton onClick={() => window.open("https://www.facebook.com/ghostprotocolspk")} className="flex justify-between gap-4 px-1">
+                <CompassIcon className="mx-2 opacity-75 py-[1px]"/>
+                <span className="mx-4">Facebook</span>  
+                <ArrowUpRightIcon className="mx-2 opacity-25 " />  
+              </RainbowButton>
+              
+              <RainbowButton onClick={() => window.open("https://instagram.com/ghostprotocolspk")} className="flex justify-between gap-4 px-1">
+                <CompassIcon className="mx-2 opacity-75 py-[1px]"/>
+                <span className="mx-4">Instagram</span>  
+                <ArrowUpRightIcon className="mx-2 opacity-25 " />  
+              </RainbowButton>
+              
+              <RainbowButton onClick={() => window.open("https://www.tiktok.com/@ghostprotocols.pk")} className="flex justify-between gap-4 px-1">
+                <CompassIcon className="mx-2 opacity-75 py-[1px]"/>
+                <span className="mx-4">Tiktok</span>  
+                <ArrowUpRightIcon className="mx-2 opacity-25 " />  
+              </RainbowButton>
+
+              {/* <Button onClick={() => window.open("https://www.facebook.com/ghostprotocolspk")} size={"lg"} className="bg-white/5 z-10 drop-shadow-2xl flex justify-between gap-4 px-1"> 
                 <CompassIcon className="mx-2 opacity-75 py-[1px]"/>
                 Facebook
                 <ArrowUpRightIcon className="mx-2 opacity-25 " />  
@@ -84,7 +121,7 @@ export default function Home() {
                 <CompassIcon className="mx-2 opacity-75 py-[1px]"/>
                 Tiktok
                 <ArrowUpRightIcon className="mx-2 opacity-25 " />  
-              </Button>
+              </Button> */}
             </div>
           )}
         </div>
