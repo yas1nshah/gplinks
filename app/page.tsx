@@ -78,11 +78,11 @@ export default function Home() {
           </Button> */}
 
           {/* GP Socials Toggle Button */}
-          <Button onClick={() => setShowSocials(!showSocials)} size={"lg"} className="bg-white/5 z-10 drop-shadow-2xl flex justify-between gap-4 px-1"> 
+          <RainbowButton onClick={() => setShowSocials(!showSocials)}  className="flex justify-between gap-4 px-1"> 
             <CompassIcon className="mx-2 opacity-75 py-[1px]"/>
             GP Socials
             {showSocials ? <ChevronUpIcon className="mx-2 opacity-25" /> : <ChevronDownIcon className="mx-2 opacity-25" />}
-          </Button>
+          </RainbowButton>
           
           {showSocials && (
             <div className="flex flex-col gap-3 bg-white/5 z-10 drop-shadow-2xl p-4 rounded-xl transition-opacity duration-1000 ease-in-out">
