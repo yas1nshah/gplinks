@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
+
 import { RainbowButton } from "@/components/ui/rainbow-button";
 import { Radio, LucideView, ArrowUpRightIcon, CompassIcon, ChevronDownIcon, ChevronUpIcon, MessageCircleMoreIcon } from "lucide-react";
 import Image from "next/image";
